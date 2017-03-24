@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	<div class="todos-header">
+		<h1 class="todos-title">todos</h1>
+	</div>
+	<div class="todos-main">
+		<div class="todos-list-add">
+      <button class="todo-add_select-all" aria-label="Mark all">
+			</button>
+      <input class="todo-add_input" placeholder="What needs to be done?" aria-label="Place to init todo"
+			/>
+    </div>
+
+		<div class="todos-list">
+			<div class="todo-item">
+				<input type="checkbox" class="todo-item_ready-mark" aria-label="Mark ready">
+				<textarea class="todo-item_text">HTML</textarea>
+	      <button class="todo-item_remove" aria-label="Delete todo"></button>
+	    </div>
+
+			<div class="todo-item __ready">
+				<input type="checkbox" checked="checked" class="todo-item_ready-mark" aria-label="Mark not ready">
+				<textarea class="todo-item_text">CSS</textarea>
+	      <button class="todo-item_remove" aria-label="Delete todo"></button>
+	    </div>
+
+			<div class="todo-item">
+				<input type="checkbox" class="todo-item_ready-mark" aria-label="Mark ready">
+				<textarea class="todo-item_text">HTML</textarea>
+	      <button class="todo-item_remove" aria-label="Delete todo"></button>
+	    </div>
+
+			<div class="todo-item">
+				<input type="checkbox" class="todo-item_ready-mark" aria-label="Mark ready">
+				<textarea class="todo-item_text">HTML</textarea>
+	      <button class="todo-item_remove" aria-label="Delete todo"></button>
+	    </div>
+		</div>
+
+		<div class="todos-actions-bar">
+			<div class="todo-actions-bar_counter" aria-label="Count unready todos">
+				n todos
+			</div>
+
+			<div class="todos-filters">
+				<button class="todos-filter __active" data-filter="all" aria-label="Filter: Show all">
+					All
+				</button>
+				<button class="todos-filter" data-filter="ready" aria-label="Filter: Show unready">
+					Not ready
+				</button>
+				<button class="todos-filter __active" data-filter="unready" aria-label="Filter: Show ready">
+					Ready
+				</button>
+			</div>
+
+			<button class="todos-actions-bar_clear-completed">
+				Remove ready todos
+			</button>
+		</div>
+	</div>
+</body>
